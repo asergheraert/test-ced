@@ -1,0 +1,8 @@
+La problématique est que CuisineAZ ne nous transmet que les urls des recettes, même si l'url devrait être parlante, 
+cela ne suffierait pas à les associer aux articles de croq-kilo, du moins pas pour les 20 000
+
+Nous pourrions récuperer toutes les urls que le site CuisineAZ veut bien retourner pour les stocker, pour le simple stockage on pourrait utiliser toutes sorte de base de données
+mais on pourtait partir sur la mise en place d'un elasricseach par exemple, cela simplifiera les choses par la suite, surtout niveau perf.
+
+Ensuite on pourrait créer un robot(j'aime bien les bots), on privilegira du NodeJS pour celui-ci, qui pourrait analyser urls et le contenu de chaque article afin de creer une base de 
+correspondance entre les articles croq-kilo et les recettes cuisineAZ.
